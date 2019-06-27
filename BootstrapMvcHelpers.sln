@@ -1,0 +1,115 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootstrapMvc.Bootstrap3", "BootstrapMvc.Bootstrap3\BootstrapMvc.Bootstrap3.csproj", "{2B9D2F94-2941-460C-BC1C-5A0C3B33F7CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootstrapMvc.Bootstrap3Mvc5", "BootstrapMvc.Bootstrap3Mvc5\BootstrapMvc.Bootstrap3Mvc5.csproj", "{4C539831-2021-4409-AC82-8D343BF0A7B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootstrapMvc.Bootstrap3Mvc6", "BootstrapMvc.Bootstrap3Mvc6\BootstrapMvc.Bootstrap3Mvc6.csproj", "{0A3F56A2-7C8E-410C-9D9A-463C571CDC7E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootstrapMvc.Bootstrap4", "BootstrapMvc.Bootstrap4\BootstrapMvc.Bootstrap4.csproj", "{70DC1B56-020A-4381-9C48-F88F7B8E41A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootstrapMvc.Bootstrap4Mvc5", "BootstrapMvc.Bootstrap4Mvc5\BootstrapMvc.Bootstrap4Mvc5.csproj", "{66269B14-7D96-48CB-87E0-F2C4D1D26E76}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootstrapMvc.Bootstrap4Mvc6", "BootstrapMvc.Bootstrap4Mvc6\BootstrapMvc.Bootstrap4Mvc6.csproj", "{6E702F5A-0CFC-4177-A1C5-76969E810CE8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootstrapMvc.Core", "BootstrapMvc.Core\BootstrapMvc.Core.csproj", "{8A414C53-3D0C-4499-AB34-8D2E21A3563B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootstrapMvc.Mvc5", "BootstrapMvc.Mvc5\BootstrapMvc.Mvc5.csproj", "{12806F8C-5B5C-4DDB-94A8-5C0DF305BE35}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootstrapMvc.Mvc6", "BootstrapMvc.Mvc6\BootstrapMvc.Mvc6.csproj", "{847FA4C6-BE15-477D-B41F-CDE153ADD3ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootstrapMvc.Common", "BootstrapMvc.Common\BootstrapMvc.Common.csproj", "{FDF6BB2D-1835-4258-B737-61F8F5435DE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B9D2F94-2941-460C-BC1C-5A0C3B33F7CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B9D2F94-2941-460C-BC1C-5A0C3B33F7CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B9D2F94-2941-460C-BC1C-5A0C3B33F7CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B9D2F94-2941-460C-BC1C-5A0C3B33F7CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C539831-2021-4409-AC82-8D343BF0A7B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C539831-2021-4409-AC82-8D343BF0A7B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C539831-2021-4409-AC82-8D343BF0A7B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C539831-2021-4409-AC82-8D343BF0A7B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A3F56A2-7C8E-410C-9D9A-463C571CDC7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A3F56A2-7C8E-410C-9D9A-463C571CDC7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A3F56A2-7C8E-410C-9D9A-463C571CDC7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A3F56A2-7C8E-410C-9D9A-463C571CDC7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70DC1B56-020A-4381-9C48-F88F7B8E41A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DC1B56-020A-4381-9C48-F88F7B8E41A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DC1B56-020A-4381-9C48-F88F7B8E41A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DC1B56-020A-4381-9C48-F88F7B8E41A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66269B14-7D96-48CB-87E0-F2C4D1D26E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66269B14-7D96-48CB-87E0-F2C4D1D26E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66269B14-7D96-48CB-87E0-F2C4D1D26E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66269B14-7D96-48CB-87E0-F2C4D1D26E76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E702F5A-0CFC-4177-A1C5-76969E810CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E702F5A-0CFC-4177-A1C5-76969E810CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E702F5A-0CFC-4177-A1C5-76969E810CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E702F5A-0CFC-4177-A1C5-76969E810CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A414C53-3D0C-4499-AB34-8D2E21A3563B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A414C53-3D0C-4499-AB34-8D2E21A3563B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A414C53-3D0C-4499-AB34-8D2E21A3563B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A414C53-3D0C-4499-AB34-8D2E21A3563B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12806F8C-5B5C-4DDB-94A8-5C0DF305BE35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12806F8C-5B5C-4DDB-94A8-5C0DF305BE35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12806F8C-5B5C-4DDB-94A8-5C0DF305BE35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12806F8C-5B5C-4DDB-94A8-5C0DF305BE35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{847FA4C6-BE15-477D-B41F-CDE153ADD3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{847FA4C6-BE15-477D-B41F-CDE153ADD3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{847FA4C6-BE15-477D-B41F-CDE153ADD3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{847FA4C6-BE15-477D-B41F-CDE153ADD3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDF6BB2D-1835-4258-B737-61F8F5435DE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF6BB2D-1835-4258-B737-61F8F5435DE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF6BB2D-1835-4258-B737-61F8F5435DE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF6BB2D-1835-4258-B737-61F8F5435DE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1568E11-1396-4928-A1B5-162B9174DDF2}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://vs-is1:8080/tfs/mei
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BootstrapMvc.Bootstrap3\\BootstrapMvc.Bootstrap3.csproj
+		SccProjectName1 = BootstrapMvc.Bootstrap3
+		SccLocalPath1 = BootstrapMvc.Bootstrap3
+		SccProjectUniqueName2 = BootstrapMvc.Bootstrap3Mvc5\\BootstrapMvc.Bootstrap3Mvc5.csproj
+		SccProjectName2 = BootstrapMvc.Bootstrap3Mvc5
+		SccLocalPath2 = BootstrapMvc.Bootstrap3Mvc5
+		SccProjectUniqueName3 = BootstrapMvc.Bootstrap3Mvc6\\BootstrapMvc.Bootstrap3Mvc6.csproj
+		SccProjectName3 = BootstrapMvc.Bootstrap3Mvc6
+		SccLocalPath3 = BootstrapMvc.Bootstrap3Mvc6
+		SccProjectUniqueName4 = BootstrapMvc.Bootstrap4\\BootstrapMvc.Bootstrap4.csproj
+		SccProjectName4 = BootstrapMvc.Bootstrap4
+		SccLocalPath4 = BootstrapMvc.Bootstrap4
+		SccProjectUniqueName5 = BootstrapMvc.Bootstrap4Mvc5\\BootstrapMvc.Bootstrap4Mvc5.csproj
+		SccProjectName5 = BootstrapMvc.Bootstrap4Mvc5
+		SccLocalPath5 = BootstrapMvc.Bootstrap4Mvc5
+		SccProjectUniqueName6 = BootstrapMvc.Bootstrap4Mvc6\\BootstrapMvc.Bootstrap4Mvc6.csproj
+		SccProjectName6 = BootstrapMvc.Bootstrap4Mvc6
+		SccLocalPath6 = BootstrapMvc.Bootstrap4Mvc6
+		SccProjectUniqueName7 = BootstrapMvc.Common\\BootstrapMvc.Common.csproj
+		SccProjectName7 = BootstrapMvc.Common
+		SccLocalPath7 = BootstrapMvc.Common
+		SccProjectUniqueName8 = BootstrapMvc.Core\\BootstrapMvc.Core.csproj
+		SccProjectName8 = BootstrapMvc.Core
+		SccLocalPath8 = BootstrapMvc.Core
+		SccProjectUniqueName9 = BootstrapMvc.Mvc5\\BootstrapMvc.Mvc5.csproj
+		SccProjectName9 = BootstrapMvc.Mvc5
+		SccLocalPath9 = BootstrapMvc.Mvc5
+		SccProjectUniqueName10 = BootstrapMvc.Mvc6\\BootstrapMvc.Mvc6.csproj
+		SccProjectName10 = BootstrapMvc.Mvc6
+		SccLocalPath10 = BootstrapMvc.Mvc6
+	EndGlobalSection
+EndGlobal

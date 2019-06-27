@@ -1,0 +1,128 @@
+﻿namespace Mvc.Controls
+{
+    using System;
+    using Mvc.Core;
+    using Mvc.Forms;
+
+    public class Checkbox : Element, IFormControl, ITextDisplay, IInlineDisplay
+    {
+        public string Text { get; set; }
+
+        public bool Inline { get; set; }
+
+        public bool Disabled { get; set; }
+
+        protected override void WriteSelf(System.IO.TextWriter writer)
+        {
+            var bootstrap4Mode = false;
+#if BOOTSTRAP4
+            bootstrap4Mode = true;
+#endif
+
+            var controlContext = GetNearestParent<IControlContext>();
+
+            ITagBuilder div = null;
+            ITagBuilder lbl = null;
+
+            if (bootstrap4Mode)
+            {
+                div = Helper.CreateTagBuilder("div");
+                div.AddCssClass("form-check");
+                if (Inline)
+                {
+                    div.AddCssClass("form-check-inline");
+                }
+
+                if (controlContext != null)
+                {
+                    if (controlContext.HasErrors)
+                    {
+                        div.AddCssClass("has-danger");
+                    }
+
+                    else if (controlContext.HasWarning)
+                    {
+                        div.AddCssClass("has-warning");
+                    }
+                }
+
+                lbl = Helper.CreateTagBuilder("label");
+                lbl.AddCssClass("form-check-label");
+
+            }
+            else
+            {
+                if (!Inline)
+                {
+                    div = Helper.CreateTagBuilder("div");
+                    div.AddCssClass("checkbox");
+                }
+
+                lbl = Helper.CreateTagBuilder("label");
+                if (Inline)
+                {
+                    lbl.AddCssClass("checkbox-inline");
+                }
+            }
+
+            div?.WriteStartTag(writer);
+            lbl?.WriteStartTag(writer);
+
+            var input = Helper.CreateTagBuilder("input");
+            input.MergeAttribute("type", "checkbox", true);
+            if (bootstrap4Mode)
+            {
+                input.AddCssClass("form-check-input");
+            }
+            if (controlContext != null)
+            {
+                input.MergeAttribute("id", controlContext.FieldName, true);
+                input.MergeAttribute("name", controlContext.FieldName, true);
+                input.MergeAttribute("value", "true", true);
+                var controlValue = controlContext.FieldValue;
+                if (controlValue != null && bool.Parse(controlValue.ToString()))
+                {
+                    input.MergeAttribute("checked", "checked", true);
+                }
+            }
+            if (Disabled)
+            {
+                input.MergeAttribute("disabled", "disabled", true);
+            }
+
+            ApplyCss(input);
+            ApplyAttributes(input);
+
+            ////input.MergeAttributes(helper.HtmlHelper.GetUnobtrusiveValidationAttributes(context.ExpressionText, context.Metadata));
+
+            input.WriteFullTag(writer);
+
+            writer.Write(" "); // writing space to separate text from checkbox itself
+
+            writer.Write(Helper.HtmlEncode(Text ?? controlContext?.DisplayName));
+
+            lbl?.WriteEndTag(writer);
+            div?.WriteEndTag(writer);
+        }
+
+        void IDisableable.SetDisabled(bool disabled)
+        {
+            Disabled = disabled;
+        }
+
+        bool IDisableable.Disabled()
+        {
+            return Disabled;
+        }
+
+        void IInlineDisplay.SetInline(bool inline)
+        {
+            Inline = inline;
+        }
+
+        bool IInlineDisplay.IsInline()
+        {
+            return Inline;
+        }
+    }
+}

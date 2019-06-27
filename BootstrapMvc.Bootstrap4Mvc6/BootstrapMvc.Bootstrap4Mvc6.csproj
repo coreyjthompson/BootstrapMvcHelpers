@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Copyright></Copyright>
+    <AssemblyTitle>BootstrapMvc.Bootstrap4Mvc6</AssemblyTitle>
+    <VersionPrefix>1.1.1</VersionPrefix>
+    <TargetFrameworks>netstandard1.6;net451</TargetFrameworks>
+    <AssemblyName>Mvc.Bootstrap4.Mvc6</AssemblyName>
+    <PackageId>BootstrapMvc.Bootstrap4Mvc6</PackageId>
+    <PackageTags></PackageTags>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryType></RepositoryType>
+    <RepositoryUrl></RepositoryUrl>
+    <RootNamespace>Mvc.Bootstrap4.Mvc6</RootNamespace>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BootstrapMvc.Mvc6\BootstrapMvc.Mvc6.csproj" />
+    <ProjectReference Include="..\BootstrapMvc.Bootstrap4\BootstrapMvc.Bootstrap4.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>
